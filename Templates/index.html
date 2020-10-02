@@ -34,7 +34,6 @@
 								<ul class="d-flex flex-row align-items-start justify-content-start">
 									<li class="active"><a href="home">Home</a></li>
 									<li><a href="aboutus">About us</a></li>
-									<li><a href="#">Services</a></li>
 									<li><a href="news">News</a></li>
 									<li><a href="contact">Contact</a></li>
 
@@ -44,6 +43,9 @@
 									{% else %}
 									<li><a href="accounts/register">Register</a></li>
 									<li><a href="accounts/login">Login</a></li>
+									{% endif %}
+									{% if user.is_authenticated %}
+									<li><b><h5 style="color: white;">Hello__{{user.first_name}} </h5></b></li>
 									{% endif %}
 								</ul>
 							</nav> 
@@ -83,7 +85,6 @@
 			<ul>
 				<li><a href="home">Home</a></li>
 				<li><a href="aboutus">About us</a></li>
-				<li><a href="#">Services</a></li>
 				<li><a href="news">News</a></li>
 				<li><a href="contact">Contact</a></li>
 
@@ -265,23 +266,24 @@
 				<div class="col">
 					<div class="destinations_container item_grid">
 
-						{% for dest in dests %}
+						
+						{%for dest in dests%}
+
 						<!-- Destination -->
 						<div class="destination item">
 							<div class="destination_image">
-								<! !!!!its for static!!!         <img src="{{baseUrl}}/{{dest.img}}" alt="">
+								<! !!!!its for static!!!         img src="{{baseUrl}}/{{dest.img}}" alt="">
 								<img src="{{dest.img.url}}" alt="" width="350" height="230">
 								{% if dest.offer %}
 								<div class="spec_offer text-center"><a href="#">Special Offer</a></div>
 								{% endif %}
 							</div>
 							<div class="destination_content">
-								<div class="destination_title"><a href="destinations.html">{{dest.name}}</a></div>
+								<div class="destination_title"><a href="destinations">{{dest.name}}</a></div>
 								<div class="destination_subtitle"><p>{{dest.desc}}</p></div>
 								<div class="destination_price">From ${{dest.price}}</div>
 							</div>
 						</div>
-
 						{% endfor %}
 
 					</div>

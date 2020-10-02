@@ -34,7 +34,6 @@
 									<ul class="d-flex flex-row align-items-start justify-content-start">
 										<li class="active"><a href="home">Home</a></li>
 										<li><a href="aboutus">About us</a></li>
-										<li><a href="#">Services</a></li>
 										<li><a href="news">News</a></li>
 										<li><a href="contact">Contact</a></li>
 
@@ -44,6 +43,9 @@
 										{% else %}
 										<li><a href="accounts/register">Register</a></li>
 										<li><a href="accounts/login">Login</a></li>
+										{% endif %}
+										{% if user.is_authenticated %}
+										<li><b><h5 style="color: white;">Hello__{{user.first_name}} </h5></b></li>
 										{% endif %}
 									</ul>
 								</nav>
@@ -82,7 +84,6 @@
 				<ul>
 					<li><a href="home">Home</a></li>
 					<li><a href="aboutus">About us</a></li>
-					<li><a href="#">Services</a></li>
 					<li><a href="news">News</a></li>
 					<li><a href="contact">Contact</a></li>
 

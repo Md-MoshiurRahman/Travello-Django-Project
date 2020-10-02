@@ -2,6 +2,11 @@ from django.shortcuts import render
 from .models import Destination
 
 # Create your views here.
+def destinations(request):
+
+    dests = Destination.objects.all()
+    return render(request, 'destinations.html', {'dests' : dests})
+
 def aboutus(request):
     return render(request, 'about.html')
 
