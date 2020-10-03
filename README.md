@@ -16,8 +16,12 @@ Travello is a web application where anyone can find suitable places for travelli
 
 
 ## How it looks
+1. 
 ![alt text](https://github.com/RahmanFiros/Travello-Django-Project/blob/master/screenshots/1.png)
+2. Registration form
 ![alt text](https://github.com/RahmanFiros/Travello-Django-Project/blob/master/screenshots/2.png)
+3. Login form
 ![alt text](https://github.com/RahmanFiros/Travello-Django-Project/blob/master/screenshots/3.png)
+4. Some features after login
 ![alt text](https://github.com/RahmanFiros/Travello-Django-Project/blob/master/screenshots/4.png)
 
