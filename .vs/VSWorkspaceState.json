@@ -2,8 +2,9 @@
   "ExpandedNodes": [
     "",
     "\\Accounts",
-    "\\Templates"
+    "\\Templates",
+    "\\Travelloapp"
   ],
-  "SelectedNode": "\\Templates\\login1.html",
+  "SelectedNode": "\\Travelloapp\\views.py",
   "PreviewInSolutionExplorer": false
 }
