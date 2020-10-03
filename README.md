@@ -4,7 +4,7 @@ Travello is a web application where anyone can find suitable places for travelli
 
 ## Tools and Frameworks
 1. Developed a web based application using Django
-2. Used PostgreSQL for the back end part and used pgAdmin to access it
+2. Used PostgreSQL for the database part and used pgAdmin to access it
 3. HTML and CSS were used for the web pages
 
 
